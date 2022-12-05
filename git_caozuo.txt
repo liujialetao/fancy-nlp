@@ -42,7 +42,10 @@ git push origin --delete b1
 https://www.bilibili.com/video/BV1y4411a7Nn?p=5&vd_source=82b424d5825df6f0aeee022464bec1ab
 #合并分支
 如果dev分支靠前，master分支落后，在落后分支直接git merge dev  叫做fast forward  中间即使有多个commit，也会被追踪   模式是fast forward模式
-如果不想到最新的commit，可以使用git merge --no-ff dev，两个分支不是归于一点， 主动发起合并的分支，会向前走了一步
+非fast forward模式，可以使用git merge --no-ff dev，两个分支不是归于一点， 主动发起合并的分支，会向前走了一步
 #合并分支有冲突时
 master合并dev有冲突，会有2次提交  第一次将dev的commit拿来，第二次真正的提交
 在master|Merging中，add 再commit 意思是已解决冲突
+
+#查看git log
+git log --graph --pretty=oneline --abbrev-commit
