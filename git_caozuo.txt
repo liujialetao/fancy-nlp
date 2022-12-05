@@ -49,3 +49,14 @@ master合并dev有冲突，会有2次提交  第一次将dev的commit拿来，�
 
 #查看git log
 git log --graph --pretty=oneline --abbrev-commit
+
+#git回退版本
+git reset --hard HEAD^
+git reset --hard HEAD^^^  =  git reset --hard HEAD~3
+git reset --hard sha1值
+git reflog
+
+#修改提交的commit
+git commit -amend -m '撤回一次提交'
+
+# 
