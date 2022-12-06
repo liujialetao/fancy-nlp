@@ -59,6 +59,8 @@ git reflog
 # git合并几次提交(最好只在本地仓库进行，将自己的几次提交合为一次)
 git rebase -i sha1
 git rebase -i HEAD~n
+将pick改成s(除了第一行的)  wq保存退出
+修改commit信息  wq保存退出
 
 #修改提交的commit
 git commit -amend -m '撤回一次提交'
