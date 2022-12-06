@@ -61,7 +61,9 @@ git rebase -i sha1
 git rebase -i HEAD~n
 将pick改成s(除了第一行的)  wq保存退出
 修改commit信息  wq保存退出
-
+	 git rebase用途2，将master分支和 dev分支合成一条
+	 首先在dev分支执行：git rebase master（git log --graph显示，master分支的新提交，在dev有了）
+	 切回master执行：git merge dev （git log --graph显示，成一条线，没有分支的东西在）
 #修改提交的commit
 git commit --amend -m '撤回一次提交'  生成新的sha1
 
