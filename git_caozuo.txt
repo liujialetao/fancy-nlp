@@ -56,6 +56,10 @@ git reset --hard HEAD^^^  =  git reset --hard HEAD~3
 git reset --hard sha1值
 git reflog
 
+# git合并几次提交(最好只在本地仓库进行，将自己的几次提交合为一次)
+git rebase -i sha1
+git rebase -i HEAD~n
+
 #修改提交的commit
 git commit -amend -m '撤回一次提交'
 
