@@ -68,4 +68,16 @@ git rebase -i HEAD~n
 #修改提交的commit
 git commit --amend -m '撤回一次提交'  生成新的sha1
 
-# 
+#查看tag
+git tag
+#新建tag  本质上：新建一个指针，指向某个sha1
+git tag v1.0.0
+#查看tag对应的sha1值
+cat .git/refs/tags/v1.0.0
+#删除tag
+git tag -d v1.0.0 #.git/refs/tags/v1.0.0下的文件夹(v1.0.0)没了
+
+git tag -a v3.0.0 -m "version 3.0.0"创建的tag
+在\.git\objects下会产生对象
+#切换到某次的tag
+git checkout <您的Tag名>
