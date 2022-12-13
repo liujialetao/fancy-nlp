@@ -4,6 +4,7 @@ https://blog.csdn.net/qq_45893999/article/details/106273214
 https://blog.csdn.net/qq_25458977/article/details/87875641
 
 #关联远程仓库
+git remote -v 查看远程仓库
 git remote add lj(代名词) 远程仓库
 
 #推送到远程已有仓库
